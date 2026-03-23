@@ -12,6 +12,9 @@ REKOMENDASI OS
 - UBUNTU 20.04 22 24.04 24.10
 - DEBIAN 10 11 12
 
+Rekomendasi Install di LXD Container
+https://github.com/ica4me/install-lxd-debian12
+
 ROOT ACCESS
 
 ```bash
@@ -33,7 +36,16 @@ wget -q filename.web.id/changerepos && chmod 777 changerepos && ./changerepos 3 
 INSTALL SCRIPT
 
 ```bash
-apt update -y && apt install -y wget curl jq screen && wget -q https://raw.githubusercontent.com/Diah082/vip/main/install-handler.sh && chmod +x install-handler.sh && ./install-handler.sh
+apt update -y && apt install -y wget curl jq screen
+```
+
+```bash
+wget -q https://raw.githubusercontent.com/xccvme/vps-tunneling/main/update-curl.sh && chmod +x update-curl.sh && ./update-curl.sh
+rm update-curl.sh
+```
+
+```bash
+wget -q https://raw.githubusercontent.com/Diah082/vip/main/install-handler.sh && chmod +x install-handler.sh && ./install-handler.sh
 ```
 
 PERINTAH UPDATE
@@ -71,6 +83,35 @@ systemctl restart nginx
 systemctl restart haproxy
 ```
 
-## 👤 Dokumentasi Asli
+PORT INFO
+
+```bash
+- TROJAN WS 443
+- TROJAN GRPC 443
+- SHADOWSOCKS WS 443
+- SHADOWSOCKS GRPC 443
+- VLESS WS 443
+- VLESS GRPC 443
+- VLESS NONTLS 80
+- VMESS WS 443
+- VMESS GRPC 443
+- VMESS NONTLS 80
+- SSH WS / TLS 443
+- SSH NON TLS 80 8880 8080 2080 2082
+- SLOWDNS 5300
+```
+
+SETTING CLOUDFLARE
+
+```bash
+- SSL/TLS : FULL
+- SSL/TLS Recommender : OFF
+- GRPC : ON
+- WEBSOCKET : ON
+- Always Use HTTPS : OFF
+- UNDER ATTACK MODE : OFF
+```
+
+## 👤 Dokumentasi Asli / Auther
 
 https://github.com/Diah082/Vip

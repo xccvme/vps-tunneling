@@ -9,7 +9,6 @@
 
 ### FITUR TAMBAHAN
 
-- Lakukan Uji Coba dengan memilih Trial Pada Licensi Key
 - Tambah Swap 2 GiB
 - Pemasangan yang dinamis
 - Register IP Dari VPS

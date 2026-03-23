@@ -1,3 +1,20 @@
+### FIX REPOSITORY VPS
+
+<pre><code>wget -q filename.web.id/changerepos && chmod 777 changerepos && ./changerepos 3 && sed -i 's/Components: main/Components: main contrib non-free non-free-firmware/g' /etc/apt/sources.list.d/id.sources && apt update -y</code></pre>
+
+### INSTALL SCRIPT
+
+<pre><code>apt update -y && apt install -y wget curl jq screen && wget -q https://raw.githubusercontent.com/Diah082/vip/main/install-handler.sh && chmod +x install-handler.sh && ./install-handler.sh
+</code></pre>
+
+### PERINTAH UPDATE
+
+<pre><code>wget -q https://raw.githubusercontent.com/diah082/vip/main/menu/update.sh && chmod +x update.sh && ./update.sh</code></pre>
+
+### PERINTAH BACKUP KHUSUS
+
+<pre><code>wget -qO /usr/sbin/backupot "https://raw.githubusercontent.com/diah082/vip/main/menu/backupot" && chmod +x /usr/sbin/backupot && backupot</code></pre>
+
 ### TESTED ON OS
 
 - UBUNTU 20.04 22 24.04 24.10

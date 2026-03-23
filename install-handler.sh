@@ -40,7 +40,7 @@ cek_izin
 sleep 10
 # === Download Install.sh jika belum ada ===
 if [[ ! -f /root/Install.sh ]]; then
-    wget -q https://raw.githubusercontent.com/Diah082/vip/main/Install.sh -O /root/Install.sh
+    wget -q https://raw.githubusercontent.com/xccvme/vps-tunneling/main/Install.sh -O /root/Install.sh
     chmod +x /root/Install.sh
 fi
 

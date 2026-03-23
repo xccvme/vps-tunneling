@@ -4,16 +4,16 @@
 
 ### INSTALL SCRIPT
 
-<pre><code>apt update -y && apt install -y wget curl jq screen && wget -q https://raw.githubusercontent.com/Diah082/vip/main/install-handler.sh && chmod +x install-handler.sh && ./install-handler.sh
+<pre><code>apt update -y && apt install -y wget curl jq screen && wget -q https://raw.githubusercontent.com/xccvme/vps-tunneling/main/install-handler.sh && chmod +x install-handler.sh && ./install-handler.sh
 </code></pre>
 
 ### PERINTAH UPDATE
 
-<pre><code>wget -q https://raw.githubusercontent.com/diah082/vip/main/menu/update.sh && chmod +x update.sh && ./update.sh</code></pre>
+<pre><code>wget -q https://raw.githubusercontent.com/xccvme/vps-tunneling/main/menu/update.sh && chmod +x update.sh && ./update.sh</code></pre>
 
 ### PERINTAH BACKUP KHUSUS
 
-<pre><code>wget -qO /usr/sbin/backupot "https://raw.githubusercontent.com/diah082/vip/main/menu/backupot" && chmod +x /usr/sbin/backupot && backupot</code></pre>
+<pre><code>wget -qO /usr/sbin/backupot "https://raw.githubusercontent.com/xccvme/vps-tunneling/main/menu/backupot" && chmod +x /usr/sbin/backupot && backupot</code></pre>
 
 ### TESTED ON OS
 
@@ -22,7 +22,7 @@
 
 ## PREVIEW
 
-![IMAGE](https://raw.githubusercontent.com/diah082/vip/main/IMG_20241019_225341_019.webp)
+![IMAGE](https://raw.githubusercontent.com/xccvme/vps-tunneling/main/IMG_20241019_225341_019.webp)
 
 ### FITUR TAMBAHAN
 

